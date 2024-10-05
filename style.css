@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('/elements/fonts/Poppins-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+body {
+  background: url('/elements/images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+form {
+  top: 50px;
+  position: relative;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  background: rgba( 255, 255, 255, 0 );
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #CCD9DE;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+button {
+  background: #CCD9DE;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 50px;
+}
+
+button:hover {
+  background: rgb(91, 193, 233);
+  outline: none;
+  border-color: skyblue;
+  box-shadow: 0 0 20px skyblue;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 10%;
+  border-radius: 25%;
+}
+
+.container {
+  padding: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-size: contain;
+  }
+
+  form {
+    width: 90%;
+    top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 10px 40px 2px;
+  }
+
+  input[type=text], input[type=password] {
+    width: 80%;
+    padding: 10px;
+  }
+
+  button {
+    width: 60%;
+    padding: 12px;
+  }
+
+  img.avatar {
+    width: 20%;
+  }
+
+  .container {
+    padding: 5px;
+  }
+}

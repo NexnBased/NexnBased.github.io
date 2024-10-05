@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Infinitia</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/main/app.css">
+    <link rel="icon" href="/elements/images/main_bg.png" type="image/icon type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <script src="/js/navbar.js"></script>
+    <script src="/security/auth.js"></script>
+    <script src="https://kit.fontawesome.com/20811550c1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Icons+Round'>
+    <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'></script>
+    <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="nav-bar">
+      <input id="nav-toggle" type="checkbox" />
+      <div id="nav-header"><a id="nav-title">Singularity</a>
+        <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+        <hr />
+      </div>
+      <div id="nav-content">
+        <div class="nav-button" onclick="window.location.reload()"><i class="fas fa-home"></i><span>Home</span></div>
+        <div class="nav-button" onclick="linkA()"><i class="fas fa-users"></i><span>Team</span></div>
+        <div class="nav-button" onclick="linkB()"><i class="fas fa-id-card"></i><span>My Profile</span></div>
+        <hr />
+        <div class="nav-button" onclick="linkD()"><i class="fas fa-folder-open"></i><span>Projects</span></div>
+        <div class="nav-button" onclick="linkE()"><i class="fas fa-bars"></i><span>Dashboard</span></div>
+        <hr />
+        <div class="nav-button" onclick="linkF()"><i class="fas fa-life-ring"></i><span>Support</span></div>
+        <div class="nav-button" onclick="linkG()"><i class="fas fa-info-circle"></i><span>About Us</span></div>
+        <div id="nav-content-highlight"></div>
+      </div>
+      <input id="nav-footer-toggle" type="checkbox" />
+      <div id="nav-footer">
+        <div id="nav-footer-heading">
+          <div id="nav-footer-avatar"><img src="/elements/images/avatar.png"></div>
+          <div id="nav-footer-titlebox">
+            <a id="nav-footer-title" href="" target="_blank">Nexn</a>
+            <span id="nav-footer-subtitle">MAIN</span>
+          </div>
+          <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+        </div>
+        <div id="nav-footer-content">
+          <Lorem>
+            <span style="font-weight: bold;">Infinitia</span><br>
+            Main Developer: <span style="font-weight: bold;">Nexn</span><br>
+          </Lorem>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+        <header>
+          <h1><span>Welcome to</span> Infinitia</h1>
+        </header>
+        <div class="container">
+          <h1>Xeon International <br> Revolutionary Emulation</h1>
+          <p>- XEON -</p>
+        </div>
+        <div class="layout">
+          <div class="card-1" onclick="link5()">
+            <p>AI Technology</p>
+          </div>
+          <div class="card-2" onclick="link6()">
+            <p>Designing</p>
+          </div>
+          <div class="card-3" onclick="link7()">
+            <p>Programming</p>
+          </div>
+          <div class="card-4" onclick="link8()">
+            <p>Hosting</p>
+          </div>
+        </div>
+        
+        <button class="btn">&nbsp;&nbsp;&nbsp;Learn more <i class="fa fa-angle-right"></i></button>
+    </div>
+
+    <h1 class="logo-text">Infinitia</h1>
+    <button class="logout-btn" onclick="logout()"><i class="fa fa-sign-out"></i></button>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+NAVBAR
+	team page - done
+	profile page - done
+	projects page - done
+	about us - done
+
+COMPONENTS
+	support page - done
+	login page - done
+	dashboard - done
+	main page - done

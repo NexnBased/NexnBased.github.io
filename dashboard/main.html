@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Dashboard</title>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+        <link rel="stylesheet" href="/dashboard/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <script src="/js/features.js"></script>
+        <script src="/security/auth.js"></script>
+        <script src="/js/navbar.js"></script>
+        <script src="/js/login.js"></script>
+        <script src="https://kit.fontawesome.com/20811550c1.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="/main/app.html" class="logo">
+                            <img src="/elements/images/avatar.png">
+                            <span class="nav-item">Infinitia</span>
+                        </a></li>
+                    <li><a href="/main/app.html">
+                            <i class="fas fa-home"></i>
+                            <span class="nav-item">Home</span>
+                        </a></li>
+                    <li><a href="/support/main.html">
+                            <i class="fas fa-comment"></i>
+                            <span class="nav-item">Support</span>
+                        </a></li>
+                    <li><a href="#">
+                            <i class="fas fa-user"></i>
+                            <span class="nav-item">Profile</span>
+                        </a></li>
+                    <li><a href="#">
+                            <i class="fas fa-project-diagram"></i>
+                            <span class="nav-item">Projects</span>
+                        </a></li>
+                    <li><a href="#">
+                            <i class="fas fa-book-open"></i>
+                            <span class="nav-item">About us</span>
+                        </a></li>
+        
+                    <li><a class="logout" onclick="logout()">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="nav-item">Log out</span>
+                        </a></li>
+                </ul>
+            </nav>
+            <section class="main">
+                <div class="main-top"><h1>Attendance</h1></div>
+                <div class="users">
+                    <div class="card">
+                        <img src="/elements/images/zentiod.jpg">
+                        <h4>Zentiod</h4>
+                        <p>UI Designer</p>
+                        <div class="per">
+                            <table>
+                                <tr>
+                                    <td><span>85%</span></td>
+                                    <td><span>87%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Month</td>
+                                    <td>Year</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <button>Profile</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://avatarfiles.alphacoders.com/860/86059.jpg">
+                        <h4>Reon</h4>
+                        <p>Progammer</p>
+                        <div class="per">
+                            <table>
+                                <tr>
+                                    <td><span>82%</span></td>
+                                    <td><span>85%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Month</td>
+                                    <td>Year</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <button>Profile</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://avatarfiles.alphacoders.com/375/375187.png">
+                        <h4>Luna</h4>
+                        <p>Tester</p>
+                        <div class="per">
+                            <table>
+                                <tr>
+                                    <td><span>94%</span></td>
+                                    <td><span>92%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Month</td>
+                                    <td>Year</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <button>Profile</button>
+                    </div>
+                    <div class="card">
+                        <img src="/elements/images/logo.png">
+                        <h4>Nexn</h4>
+                        <p>UI Designer</p>
+                        <div class="per">
+                            <table>
+                                <tr>
+                                    <td><span>85%</span></td>
+                                    <td><span>82%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Month</td>
+                                    <td>Year</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <button>Profile</button>
+                    </div>
+                </div>
+        
+                <section class="attendance">
+                    <div class="attendance-list">
+                        <h1>Attendance List</h1>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Depart</th>
+                                    <th>Date</th>
+                                    <th>Join Time</th>
+                                    <th>Logout Time</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td>Zentiod</td>
+                                    <td>Design</td>
+                                    <td>03-24-22</td>
+                                    <td>8:00AM</td>
+                                    <td>3:00PM</td>
+                                    <td><button>View</button></td>
+                                </tr>
+                                <tr class="active">
+                                    <td>02</td>
+                                    <td>Nexn</td>
+                                    <td>Design</td>
+                                    <td>03-24-22</td>
+                                    <td>9:00AM</td>
+                                    <td>4:00PM</td>
+                                    <td><button>View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>Reon</td>
+                                    <td>Coding</td>
+                                    <td>03-24-22</td>
+                                    <td>8:00AM</td>
+                                    <td>3:00PM</td>
+                                    <td><button>View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>Luna</td>
+                                    <td>Testing</td>
+                                    <td>03-24-22</td>
+                                    <td>8:00AM</td>
+                                    <td>3:00PM</td>
+                                    <td><button>View</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </body>
+</html>

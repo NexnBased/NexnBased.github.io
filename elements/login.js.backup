@@ -1,0 +1,35 @@
+window.addEventListener('load', (event) => {
+  const form = document.getElementById('main');
+  if (form) {
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const usernameInput = document.querySelector('input[name="uname"]');
+      const passwordInput = document.querySelector('input[name="psw"]');
+      if (usernameInput && passwordInput) {
+        const username = usernameInput.value;
+        const password = passwordInput.value;
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+          if (this.readyState === 4 && this.status === 200) {
+            try {
+              const credentials = JSON.parse(this.responseText);
+              if (username === credentials.username && password === credentials.password) {
+                window.location.href = '/main/app.html';
+              } else {
+                alert('Incorrect username or password. Try again!');
+              }
+            } catch (error) {
+              console.error('Error parsing JSON:', error);
+            }
+          }
+        };
+        xhr.open('GET', '/security/login.txt', true);
+        xhr.send();
+      } else {
+        console.error('Username or password input elements not found.');
+      }
+    });
+  } else {
+    console.error('Form element not found.');
+  }
+});
